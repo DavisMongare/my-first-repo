@@ -8,29 +8,61 @@
         body {
             font-family: Arial, sans-serif;
             color: #333;
-            background-color: #f3f3f3;
+            background-color: #e0e0e0;
             margin: 0;
             padding: 0;
         }
 
         .container {
-            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header, .footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #ff6600;
+            color: #fff;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .content, .sidebar {
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
         }
 
         .sidebar {
-            width: 25%;
-            background-color: #ff6600; /* Orange */
+            width: 30%;
+            float: left;
+            margin-right: 20px;
+            background-color: #ff6600;
             color: #fff;
-            padding: 1rem;
         }
 
-        .sidebar h2 {
-            margin-top: 0;
+        .main-content {
+            width: 70%;
+            float: left;
         }
 
-        .content {
-            width: 75%;
-            padding: 1rem;
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        .divider {
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
         }
 
         a {
@@ -41,28 +73,33 @@
         a:hover {
             text-decoration: underline;
         }
-
-        section {
-            margin-bottom: 2rem;
-        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="sidebar">
-            <h2>Sidebar</h2>
-            <p>Links and other info here</p>
-        </div>
-        <div class="content">
+        <div class="header">
             <h1>Welcome to My GitHub Pages Site</h1>
-            <section>
-                <h2>Section 1</h2>
-                <p>Content for section 1.</p>
-            </section>
-            <section>
-                <h2>Section 2</h2>
-                <p>Content for section 2.</p>
-            </section>
+        </div>
+        <div class="clearfix">
+            <div class="sidebar">
+                <h2>Sidebar</h2>
+                <p>Links and other info here</p>
+            </div>
+            <div class="main-content">
+                <section>
+                    <h2>Section 1</h2>
+                    <p>Content for section 1.</p>
+                    <div class="divider"></div>
+                </section>
+                <section>
+                    <h2>Section 2</h2>
+                    <p>Content for section 2.</p>
+                    <div class="divider"></div>
+                </section>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Footer content here</p>
         </div>
     </div>
 </body>
