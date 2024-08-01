@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Davis Mongare Portfolio </title>
+    <title>Davis Mongare Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -24,39 +24,20 @@
 
         .header, .footer {
             text-align: center;
-            padding: 10px 0;
+            padding: 20px 0;
             background-color: #ff6600;
             color: #fff;
             border-radius: 10px;
             margin-bottom: 20px;
         }
 
-        .content, .sidebar {
+        .content {
             padding: 20px;
-            border-radius: 10px;
             background-color: #f9f9f9;
+            border-radius: 10px;
         }
 
-        .sidebar {
-            width: 30%;
-            float: left;
-            margin-right: 20px;
-            background-color: #ff6600;
-            color: #fff;
-        }
-
-        .main-content {
-            width: 70%;
-            float: left;
-        }
-
-        .clearfix::after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        section {
+        .section {
             margin-bottom: 20px;
         }
 
@@ -65,8 +46,17 @@
             margin: 20px 0;
         }
 
+        .visualization {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
         a {
-            color: #fff;
+            color: #ff6600;
             text-decoration: none;
         }
 
@@ -79,27 +69,39 @@
     <div class="container">
         <div class="header">
             <h1>Welcome to My Portfolio</h1>
+            <p>Data Engineer & Data Scientist</p>
         </div>
-        <div class="clearfix">
-            <div class="sidebar">
-                <h2>Sidebar</h2>
-                <p> info</p>
-            </div>
-            <div class="main-content">
-                <section>
-                    <h2>Section 1</h2>
-                    <p>Content for section 1.</p>
-                    <div class="divider"></div>
-                </section>
-                <section>
-                    <h2>Section 2</h2>
-                    <p>Content for section 2.</p>
-                    <div class="divider"></div>
-                </section>
-            </div>
+        <div class="content">
+            <section class="section">
+                <h2>About Me</h2>
+                <p>Welcome to my portfolio! I'm Davis Mongare, a Data Engineer with a background in Civil Engineering and a passion for Data Science. This portfolio showcases my work, projects, and visualizations.</p>
+                <div class="divider"></div>
+            </section>
+            <section class="section">
+                <h2>Projects</h2>
+                <p>Below are some of my key projects:</p>
+                <ul>
+                    <li><strong>Business Data Analysis:</strong> Analyzed and visualized business data to derive actionable insights.</li>
+                    <li><strong>AI Models:</strong> Developed and deployed machine learning models for predictive analytics.</li>
+                </ul>
+                <div class="divider"></div>
+            </section>
+            <section class="section">
+                <h2>Visualizations</h2>
+                <div class="visualization">
+                    <!-- Embed your visualization here -->
+                    <iframe src="Twitter-Text-Mining.html" width="100%" height="400px" frameborder="0"></iframe>
+                </div>
+                <div class="divider"></div>
+            </section>
+            <section class="section">
+                <h2>Contact</h2>
+                <p>Feel free to reach out to me via <a href="mailto:email@example.com">email@example.com</a>.</p>
+                <div class="divider"></div>
+            </section>
         </div>
         <div class="footer">
-            <p>Footer content </p>
+            <p>&copy; 2024 Davis Mongare. All rights reserved.</p>
         </div>
     </div>
 </body>
